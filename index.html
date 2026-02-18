@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معهد فورتي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<div id="loader">
+    <video autoplay muted playsinline class="loader-video">
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+
+    <p class="loader-text">To be forté .. be with forté</p>
+</div>
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="images/logo (2).webp" alt="Forte Logo" class="hero-logo">
+    <div class="overlay">
+        <h1>معهد فورتي Forté</h1>
+        <p class="subtitle">لتكون قوي.. خليك مع فورتي</p>
+        <p class="en">To be forté.. be with forté</p>
+    </div>
+</section>
+
+<!-- TEACHERS -->
+<section class="teachers">
+    <h2>أساتذة المعهد</h2>
+    <div class="teachers-grid">
+
+        <div class="teacher-card">
+            <img src="images/Farkad.png" alt="فرقد الحايك" class="teacher-img">
+            <h3>فرقد الحايك</h3>
+            <p>آلة الغيتار<br>الصولفيج ومبادئ الموسيقى<br>الصولفيج الغنائي</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="images/Amthal.png" alt="أمثل سعد" class="teacher-img">
+            <h3>أمثل سعد</h3>
+            <p>آلة الكمان</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="images/Karam.png" alt="كرم محمد" class="teacher-img">
+            <h3>كرم محمد</h3>
+            <p>آلة العود</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="images/Yousef.png" alt="يوسف ديب" class="teacher-img">
+            <h3>يوسف ديب</h3>
+            <p>آلات إيقاعية</p>
+        </div>
+        <div class="teacher-card">
+            <img src="images/Mike.jpg" alt="منى يوسف" class="teacher-img">
+            <h3>منى عيسى</h3>
+            <p>أستاذة غناء</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages">
+    <h2>باقات الاشتراك</h2>
+
+    <div class="packages-grid">
+
+        <div class="package-card">
+            <h3>الباقة الأساسية</h3>
+            <ul>
+                <li>8 جلسات / أربعة للآلة وأربعة للصولفيج</li>
+                <li>جلسات الصولفيج جماعية</li>
+                <li>جلسات الآلة: طالبان</li>
+            </ul>
+            <div class="price">160,000</div>
+        </div>
+
+        <div class="package-card">
+            <h3>الباقة الفضية</h3>
+            <ul>
+                <li>8 جلسات / أربعة للآلة وأربعة للصولفيج</li>
+                <li>جلسات الصولفيج جماعية</li>
+                <li>جلسات الآلة: خاصة</li>
+            </ul>
+            <div class="price">200,000</div>
+        </div>
+
+        <div class="package-card">
+            <h3>الباقة الخاصة</h3>
+            <ul>
+                <li>8 جلسات / أربعة للآلة وأربعة للصولفيج</li>
+                <li>جلسات الصولفيج خاصة</li>
+                <li>جلسات الآلة: خاصة</li>
+            </ul>
+            <div class="price">250,000</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <img src="images/logo.webp" alt="Forte Logo" class="footer-logo">
+    <h2>معلومات أكثر</h2>
+    <div class="about-grid">
+
+    <a href="#" class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>اللاذقية - اسطامو</span>
+    </a>
+
+    <a href="https://wa.me/qr/FLT2OPV4Q3MZG1" class="contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span> واتساب </span>
+    </a>
+    <a href="https://www.facebook.com/share/18DcMQG2qq/" class="contact-item">
+        <i class="fa-brands fa-facebook"></i>
+        <span> فيسبوك </span>
+    </a>
+    
+    <a href="https://wa.me/qr/FLT2OPV4Q3MZG1" class="contact-item">
+        <i class="fa-solid fa-guitar"></i>
+        <span>تجارة آلات موسيقية</span>
+    </a>
+
+</div>
+
+</section>
+
+<footer>
+    <a class="cont" href="https://www.facebook.com/share/18J7HRNp8s/">Web developer: Sulieman Nasser </a>||<a class="cont" href="https://www.facebook.com/share/1DBzAu9app/"> Web designer: Ismail Salima</a>
+</footer>
+<script>
+const video = document.querySelector(".loader-video");
+
+video.onended = () => {
+    const loader = document.getElementById("loader");
+    loader.style.opacity = "0";
+    loader.style.transition = "0.5s";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 500);
+};
+</script>
+</body>
+</html>

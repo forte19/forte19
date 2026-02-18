@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family:"Cairo",sans-serif;
+    background: #f2f2f2;
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+/* HERO */
+.hero {
+    background: url("images/piano.jpg") center/cover no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.hero-logo {
+    position: absolute;
+    top: 20px;
+    left: 1px;
+    width: 150px;
+    z-index: 10;
+}
+.footer-logo {
+    width: 190px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.en {
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* TEACHERS */
+.teachers h2{
+    margin-bottom:100px;
+    margin-top:-20px;
+}
+.teachers {
+    padding: 80px 10%;
+    background: #e5e5e5;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 90px;
+}
+
+.teacher-card {
+    background: #000;
+    color: white;
+    padding: 70px 20px 25px 20px;
+    border-radius: 20px;
+    text-align: center;
+    position:relative;
+   
+}
+
+.teacher-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: block;
+    border: 5px solid black;
+}
+
+
+/* PACKAGES */
+.packages {
+    padding: 80px 10%;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.package-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.package-card h3 {
+    background: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.package-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.package-card li {
+    margin-bottom: 10px;
+    font-weight:600
+}
+
+.price {
+    background: #000;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 10%;
+    background: #e5e5e5;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 50px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+}
+.cont{
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+.cont:hover {
+    background: #444;
+}
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.contact-item i {
+    font-size: 35px;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item:hover i {
+    background: #444;
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-video {
+    width: 400px;
+}
+
+.loader-text {
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    opacity: 0;
+    animation: fadeIn forwards ease-in 1s;
+    animation-delay: 2.7s;
+    
+}
+@keyframes fadeIn {
+    to{opacity: 1;}
+};
