@@ -29,7 +29,7 @@ h2 {
     position: absolute;
     top: 20px;
     left: 1px;
-    width: 150px;
+    width: 190px;
     z-index: 10;
 }
 .footer-logo {
@@ -234,4 +234,5 @@ footer {
 }
 @keyframes fadeIn {
     to{opacity: 1;}
+
 };
